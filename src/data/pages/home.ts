@@ -1,71 +1,101 @@
-import { site } from "@/data/site";
 import type { PageContent } from "@/types/content";
 
 export const homePage: PageContent = {
-  id: "home",
-  translationKey: "home",
-  locale: "en-US",
-  routeKind: "home",
-  slug: "",
-  url: "/",
-  pageType: "home",
-  presentation: { shell: "home" },
-  h1: `${site.gameName} Guide Hub`,
-  seoTitle: `${site.gameName} Guide Hub | Wiki, Guides, Release Date, FAQ`,
-  metaDescription:
-    "A clean guide hub template with wiki notes, starter guides, release information, FAQs, and trust pages for a game攻略站 launch.",
-  summary:
-    "Start here for the wiki index, guide categories, launch information, and frequently asked questions.",
-  hero: {
-    eyebrow: "Unofficial guide hub",
-    subtitle: site.tagline,
-    ctas: [
-      { label: "Open Wiki", href: "/wiki" },
-      { label: "Browse Guides", href: "/guides" },
-    ],
+  "id": "home-en-US",
+  "translationKey": "home",
+  "locale": "en-US",
+  "routeKind": "home",
+  "slug": "",
+  "url": "/",
+  "pageType": "home",
+  "presentation": {
+    "shell": "home"
   },
-  quickAnswer:
-    "This homepage acts as the central guide hub for the selected game, linking users to wiki notes, guides, release information, and FAQs.",
-  keyFacts: [
-    { label: "Site type", value: "Unofficial guide hub" },
-    { label: "V1 page set", value: "5 content pages + 4 trust pages" },
-    { label: "Source rule", value: "Official facts only before launch" },
+  "h1": "The Piper of Dawn on Steam: Launch, Loop, and First Read",
+  "seoTitle": "The Piper of Dawn on Steam: Launch, Loop, and First Read",
+  "metaDescription": "The Piper of Dawn is Bone Nail's alchemy-shop-farming time-loop RPG on Steam, released Sep 22, 2026. Get the launch facts, mechanics, and best first pages.",
+  "summary": "The Piper of Dawn is Bone Nail's single-player alchemy-shop-farming time-loop RPG on Steam under AppID 3804370. It released worldwide on September 22, 2026 with a 10% introductory discount that runs until October 6, 2026. This hub helps a new PC player confirm identity, see the launch price, and jum",
+  "hero": {
+    "eyebrow": "Unofficial guide hub",
+    "subtitle": "The Piper of Dawn is Bone Nail's single-player alchemy-shop-farming time-loop RPG on Steam under AppID 3804370. It released worldwide on September 22, 2026 with a 10% introductory discount that runs until October 6, 2026. This hub helps a new PC player confirm identity, see the launch price, and jump to the guide that answers the next question.\n\n## What The Piper of Dawn actually is\n\nThe Piper of Dawn is an indie RPG built around a Diamond City alchemy shop that loops in time. You run the shop, brew potions through the Tree of Life, tend magical crops on expanding underground biomes, and grow your own Peoplesprouts workforce from body parts. Steam tags place it in Indie, RPG, Simulation, and Strategy, with Shop Keeper, Farming Sim, Base Building, Story Rich, Multiple Endings, Lovecraftian, Choices Matter, and Singleplayer on top.\n\nThe premise is unusual because the same city keeps resetting. Time rewinds through the Save and Load gods, while divine Oracle blessings stack onto each loop, so every run leaves the shop a little further forward. The story branches through six factions, six central heroines, and forty or more NPCs, with endings that depend on which alliances survive the loop.\n\n## Release and price snapshot\n\nThe full game is live worldwide on Steam from September 22, 2026 under AppID 3804370. The base price is USD 12.99, with a launch-window 10% discount that brings the price to USD 11.69. The introductory offer runs until October 6, 2026, after which the price returns to the regular Steam listing.\n\nThe launch discount is set on the Steam store page only. There is no separate pre-order, no early access tier, and no timed unlock to wait for; the page flipped from coming-soon to live on release day for everyone in every region that can see the store listing.\n\n## Mechanics overview\n\nThe core loop is alchemy, shop, farming, time loop, with each piece feeding the next. Brewing uses the Tree of Life and Equivalent Exchange rules; crops supply ingredients through alchemical circles placed in the underground biomes; Peoplesprouts run the counters as Farmers, Retailers, and Manufacturers; and the loop rewinds the day so you can carry shop upgrades, recipes, and Oracle blessings into the next run. Multiple endings and faction reputation branch the outcome.\n\nThis site splits the loop into separate guide pages because each subsystem has its own player questions: alchemy recipes and Equivalent Exchange on one page, magical crops and underground biomes on another, Peoplesprouts on a third, and the time loop with Save and Load on a fourth. The gameplay hub page links them together so the order stays clear.\n\n## Status pages\n\nBefore diving deeper, the launch-day facts live on these status pages.\n\n- The [overview](/about) page confirms identity, developer Bone Nail, publisher Bone Nail with 2P Games co-publishing, and the Pink Floyd album disambiguation.\n- The [release status](/release) page confirms the September 22, 2026 launch and the October 6, 2026 discount end.\n- The [Steam availability](/steam) page confirms AppID 3804370, single-player status, the 91 Achievements count, and the demo reference.\n- The [system requirements](/system-requirements) page lists the Windows 10, i5 quad-core, GTX 750 Ti minimum spec.\n\n## Mechanics guides\n\nOnce the basics are clear, the guides break each part of the loop into its own answer.\n\n- The [gameplay loop](/gameplay) page explains how the four pillars (alchemy, farming, shop, time loop) fit together.\n- The [time loop](/time-loop) page covers Diamond City's reset and the Save and Load gods.\n- The [alchemy](/alchemy) page covers the Tree of Life and Equivalent Exchange rules.\n- The [farming](/farming) page covers the magical crops and the underground biomes you expand into.\n- The [Peoplesprouts](/peoplesprouts) page covers the workforce grown from body parts.\n\n## Story and cast\n\nThe cast is split into a named heroine group plus a wider NPC crowd, with six factions controlling reputation.\n\n- The [companions and heroines](/companions) page covers Elisabeth Liebig, Helena Wolfen, Gretel, Jimo Li, Hypnos, and the Sissi / Nene / Aurora Ludwig trio.\n- The [factions](/factions) page covers the six reputation tracks and how they affect endings.\n- The [endings](/endings) page covers how branching choices and faction reputation feed the multiple endings.\n\n## Records\n\nFor completion-minded players, the records hub is the cleanest entry point.\n\n- The [achievements](/achievements) page covers the 91 Steam Achievements count.\n- The [wiki hub](/wiki) collects every page on this site in one place so you can read outward from identity into mechanics.",
+    "ctas": [
+      {
+        "label": "Open Wiki",
+        "href": "/wiki"
+      },
+      {
+        "label": "Release Status",
+        "href": "/release"
+      },
+      {
+        "label": "Gameplay Loop",
+        "href": "/gameplay"
+      }
+    ]
+  },
+  "quickAnswer": "The Piper of Dawn is Bone Nail's single-player alchemy-shop-farming time-loop RPG on Steam under AppID 3804370. It released worldwide on September 22, 2026 with a 10% introductory discount that runs until October 6, 2026. This hub helps a new PC player confirm identity, see the launch price, and jump to the guide that answers the next question.\n\n## What The Piper of Dawn actually is\n\nThe Piper of Dawn is an indie RPG built around a Diamond City alchemy shop that loops in time. You run the shop, brew potions through the Tree of Life, tend magical crops on expanding underground biomes, and grow your own Peoplesprouts workforce from body parts. Steam tags place it in Indie, RPG, Simulation, and Strategy, with Shop Keeper, Farming Sim, Base Building, Story Rich, Multiple Endings, Lovecraftian, Choices Matter, and Singleplayer on top.\n\nThe premise is unusual because the same city keeps resetting. Time rewinds through the Save and Load gods, while divine Oracle blessings stack onto each loop, so every run leaves the shop a little further forward. The story branches through six factions, six central heroines, and forty or more NPCs, with endings that depend on which alliances survive the loop.\n\n## Release and price snapshot\n\nThe full game is live worldwide on Steam from September 22, 2026 under AppID 3804370. The base price is USD 12.99, with a launch-window 10% discount that brings the price to USD 11.69. The introductory offer runs until October 6, 2026, after which the price returns to the regular Steam listing.\n\nThe launch discount is set on the Steam store page only. There is no separate pre-order, no early access tier, and no timed unlock to wait for; the page flipped from coming-soon to live on release day for everyone in every region that can see the store listing.\n\n## Mechanics overview\n\nThe core loop is alchemy, shop, farming, time loop, with each piece feeding the next. Brewing uses the Tree of Life and Equivalent Exchange rules; crops supply ingredients through alchemical circles placed in the underground biomes; Peoplesprouts run the counters as Farmers, Retailers, and Manufacturers; and the loop rewinds the day so you can carry shop upgrades, recipes, and Oracle blessings into the next run. Multiple endings and faction reputation branch the outcome.\n\nThis site splits the loop into separate guide pages because each subsystem has its own player questions: alchemy recipes and Equivalent Exchange on one page, magical crops and underground biomes on another, Peoplesprouts on a third, and the time loop with Save and Load on a fourth. The gameplay hub page links them together so the order stays clear.\n\n## Status pages\n\nBefore diving deeper, the launch-day facts live on these status pages.\n\n- The [overview](/about) page confirms identity, developer Bone Nail, publisher Bone Nail with 2P Games co-publishing, and the Pink Floyd album disambiguation.\n- The [release status](/release) page confirms the September 22, 2026 launch and the October 6, 2026 discount end.\n- The [Steam availability](/steam) page confirms AppID 3804370, single-player status, the 91 Achievements count, and the demo reference.\n- The [system requirements](/system-requirements) page lists the Windows 10, i5 quad-core, GTX 750 Ti minimum spec.\n\n## Mechanics guides\n\nOnce the basics are clear, the guides break each part of the loop into its own answer.\n\n- The [gameplay loop](/gameplay) page explains how the four pillars (alchemy, farming, shop, time loop) fit together.\n- The [time loop](/time-loop) page covers Diamond City's reset and the Save and Load gods.\n- The [alchemy](/alchemy) page covers the Tree of Life and Equivalent Exchange rules.\n- The [farming](/farming) page covers the magical crops and the underground biomes you expand into.\n- The [Peoplesprouts](/peoplesprouts) page covers the workforce grown from body parts.\n\n## Story and cast\n\nThe cast is split into a named heroine group plus a wider NPC crowd, with six factions controlling reputation.\n\n- The [companions and heroines](/companions) page covers Elisabeth Liebig, Helena Wolfen, Gretel, Jimo Li, Hypnos, and the Sissi / Nene / Aurora Ludwig trio.\n- The [factions](/factions) page covers the six reputation tracks and how they affect endings.\n- The [endings](/endings) page covers how branching choices and faction reputation feed the multiple endings.\n\n## Records\n\nFor completion-minded players, the records hub is the cleanest entry point.\n\n- The [achievements](/achievements) page covers the 91 Steam Achievements count.\n- The [wiki hub](/wiki) collects every page on this site in one place so you can read outward from identity into mechanics.",
+  "keyFacts": [
+    {
+      "label": "Release",
+      "value": "September 22, 2026"
+    },
+    {
+      "label": "Developer",
+      "value": "Bone Nail + 2P Games co-publishing"
+    },
+    {
+      "label": "Platform",
+      "value": "Steam (AppID 3804370)"
+    }
   ],
-  modules: [
+  "modules": [
     {
-      id: "start-here",
-      type: "prose",
-      heading: "Start here",
-      body:
-        "Use the wiki page for core game facts, the guides page for player-facing help, and the release page for official launch timing. Replace each placeholder with verified information before publishing.",
-      links: [
-        { label: "Wiki", href: "/wiki", description: "Core facts and game systems." },
-        { label: "Guides", href: "/guides", description: "Starter guide categories." },
-        { label: "Release Date", href: "/release-date", description: "Official launch timing." },
-      ],
+      "id": "quick-answer",
+      "type": "callout",
+      "tone": "confirmed",
+      "title": "Quick answer",
+      "body": "## Quick Answer\n\nThe Piper of Dawn is Bone Nail's single-player alchemy-shop-farming time-loop RPG on Steam under AppID 3804370. It released worldwide on September 22, 2026 with a 10% introductory discount that runs until October 6, 2026. This hub helps a new PC player confirm identity, see the launch price, and jump to the guide that answers the next question.\n\n## What The Piper of Dawn actually is\n\nThe Piper of Dawn is an indie RPG built around a Diamond City alchemy shop that loops in time. You run the shop, brew potions through the Tree of Life, tend magical crops on expanding underground biomes, and grow your own Peoplesprouts workforce from body parts. Steam tags place it in Indie, RPG, Simulation, and Strategy, with Shop Keeper, Farming Sim, Base Building, Story Rich, Multiple Endings, Lovecraftian, Choices Matter, and Singleplayer on top.\n\nThe premise is unusual because the same city keeps resetting. Time rewinds through the Save and Load gods, while divine Oracle blessings stack onto each loop, so every run leaves the shop a little further forward. The story branches through six factions, six central heroines, and forty or more NPCs, with endings that depend on which alliances survive the loop.\n\n## Release and price snapshot\n\nThe full game is live worldwide on Steam from September 22, 2026 under AppID 3804370. The base price is USD 12.99, with a launch-window 10% discount that brings the price to USD 11.69. The introductory offer runs until October 6, 2026, after which the price returns to the regular Steam listing.\n\nThe launch discount is set on the Steam store page only. There is no separate pre-order, no early access tier, and no timed unlock to wait for; the page flipped from coming-soon to live on release day for everyone in every region that can see the store listing.\n\n## Mechanics overview\n\nThe core loop is alchemy, shop, farming, time loop, with each piece feeding the next. Brewing uses the Tree of Life and Equivalent Exchange rules; crops supply ingredients through alchemical circles placed in the underground biomes; Peoplesprouts run the counters as Farmers, Retailers, and Manufacturers; and the loop rewinds the day so you can carry shop upgrades, recipes, and Oracle blessings into the next run. Multiple endings and faction reputation branch the outcome.\n\nThis site splits the loop into separate guide pages because each subsystem has its own player questions: alchemy recipes and Equivalent Exchange on one page, magical crops and underground biomes on another, Peoplesprouts on a third, and the time loop with Save and Load on a fourth. The gameplay hub page links them together so the order stays clear.\n\n## Status pages\n\nBefore diving deeper, the launch-day facts live on these status pages.\n\n- The [overview](/about) page confirms identity, developer Bone Nail, publisher Bone Nail with 2P Games co-publishing, and the Pink Floyd album disambiguation.\n- The [release status](/release) page confirms the September 22, 2026 launch and the October 6, 2026 discount end.\n- The [Steam availability](/steam) page confirms AppID 3804370, single-player status, the 91 Achievements count, and the demo reference.\n- The [system requirements](/system-requirements) page lists the Windows 10, i5 quad-core, GTX 750 Ti minimum spec.\n\n## Mechanics guides\n\nOnce the basics are clear, the guides break each part of the loop into its own answer.\n\n- The [gameplay loop](/gameplay) page explains how the four pillars (alchemy, farming, shop, time loop) fit together.\n- The [time loop](/time-loop) page covers Diamond City's reset and the Save and Load gods.\n- The [alchemy](/alchemy) page covers the Tree of Life and Equivalent Exchange rules.\n- The [farming](/farming) page covers the magical crops and the underground biomes you expand into.\n- The [Peoplesprouts](/peoplesprouts) page covers the workforce grown from body parts.\n\n## Story and cast\n\nThe cast is split into a named heroine group plus a wider NPC crowd, with six factions controlling reputation.\n\n- The [companions and heroines](/companions) page covers Elisabeth Liebig, Helena Wolfen, Gretel, Jimo Li, Hypnos, and the Sissi / Nene / Aurora Ludwig trio.\n- The [factions](/factions) page covers the six reputation tracks and how they affect endings.\n- The [endings](/endings) page covers how branching choices and faction reputation feed the multiple endings.\n\n## Records\n\nFor completion-minded players, the records hub is the cleanest entry point.\n\n- The [achievements](/achievements) page covers the 91 Steam Achievements count.\n- The [wiki hub](/wiki) collects every page on this site in one place so you can read outward from identity into mechanics."
     },
     {
-      id: "safe-launch",
-      type: "prose",
-      heading: "Safe launch baseline",
-      body:
-        "The template keeps the first version small so the launch workflow can verify routing, metadata, sitemap, robots, analytics, and Search Console submission before deeper content work begins.",
+      "id": "faq",
+      "type": "prose",
+      "heading": "Frequently asked questions",
+      "body": "## Frequently Asked Questions\n\n### What is The Piper of Dawn?\n\nThe Piper of Dawn is a single-player alchemy-shop-farming time-loop RPG by developer Bone Nail, co-published with 2P Games. It released on Steam under AppID 3804370 on September 22, 2026 and combines shop management, magical farming, and a looping Diamond City with multiple endings.\n\n### When did The Piper of Dawn release?\n\nThe Piper of Dawn released worldwide on September 22, 2026. The launch was set by the Steam store page and applies to every region that can see the listing; no separate regional unlock time has been published.\n\n### How much does The Piper of Dawn cost?\n\nThe base price is USD 12.99 on Steam. A 10% introductory discount brings the price to USD 11.69 and runs until October 6, 2026, after which the regular Steam listing takes over.\n\n### Is The Piper of Dawn related to the Pink Floyd album?\n\nNo. The Piper of Dawn is a 2026 Steam game by Bone Nail. Pink Floyd's 1967 album \"The Piper at the Gates of Dawn\" is an unrelated music release that shares a few words with the title; the album is referenced only as a disambiguation note on the overview page.\n\n### Does The Piper of Dawn have a demo?\n\nA demo went live during Steam Next Fest in February 2026 on the same AppID 3804370 listing. Whether the demo remains publicly available after the September 22, 2026 launch has not been announced separately as of 2026-09-25."
     },
     {
-      id: "example-entries",
-      type: "entity-grid",
-      heading: "Guide Entry Points",
-      items: [
-        { title: "Wiki", summary: "Core facts and game systems.", href: "/wiki" },
-        { title: "Guides", summary: "Starter guide categories.", href: "/guides" },
-        { title: "Release Date", summary: "Official launch timing.", href: "/release-date" },
-        { title: "FAQ", summary: "Short answers and source context.", href: "/faq" },
-      ],
+      "id": "sources",
+      "type": "prose",
+      "heading": "Sources",
+      "body": "## Sources\n\n- [The Piper of Dawn on Steam (AppID 3804370)](https://store.steampowered.com/app/3804370/) - `official/store` - checked `2026-09-25` - Identity, developer Bone Nail, publisher Bone Nail + 2P Games co-publishing, AppID 3804370, release September 22 2026, base price USD 12.99, 10% introductory discount through October 6 2026, full audio and subtitles list, tags, 91 Steam Achievements, single-player tag\n- [PlayPile review card for The Piper of Dawn](https://playpile.gg/games/the-piper-of-dawn) - `media/interview` - checked `2026-09-25` - Mechanics summary covering the alchemy-shop-farming-time-loop loop and Peoplesprouts workforce framing"
     },
+    {
+      "id": "internal-links",
+      "type": "prose",
+      "heading": "Internal link requirements",
+      "body": "## Internal Link Requirements\n\n- `overview` -> /about - context: identity, developer Bone Nail, 2P Games co-publishing, and the Pink Floyd album disambiguation\n- `release status` -> /release - context: confirmed September 22 2026 launch and the October 6 2026 discount end\n- `Steam availability` -> /steam - context: Steam AppID 3804370, single-player tag, 91 Achievements, and the demo reference\n- `gameplay loop` -> /gameplay - context: how the alchemy-shop-farming-time-loop pillars fit together\n- `companions and heroines` -> /companions - context: the six central heroines and the wider NPC cast\n- `achievements` -> /achievements - context: the 91 Steam Achievements reference\n- `wiki hub` -> /wiki - context: aggregated entry point for every guide and status page on this site"
+    },
+    {
+      "id": "fact-boundaries",
+      "type": "prose",
+      "heading": "Fact boundaries",
+      "body": "## Fact Boundaries\n\n- This page is anchored to launch day (September 22, 2026) and the introductory discount window (until October 6, 2026) only; post-launch updates are not promised.\n- Pink Floyd's 1967 album \"The Piper at the Gates of Dawn\" is unrelated and is referenced only as a disambiguation note inside the overview page; it is never a fact source for the game.\n- Demo availability after launch, Mac/Linux/console/Steam Deck ports, regional prices outside the displayed USD price, and per-achievement data are not announced as of 2026-09-25.\n- Every current-game fact above is sourced from the official Steam store page (AppID 3804370) or the named PlayPile review card; no claim is fabricated or extrapolated."
+    }
   ],
-  faqIds: ["what-is-this-site", "is-official"],
-  relatedPageIds: ["wiki", "guides", "release-date", "faq"],
-  schemaTypes: ["WebSite", "CollectionPage", "FAQPage"],
-  sourceStatus: "internal",
-  lastReviewed: "2026-06-18",
+  "faqIds": [],
+  "relatedPageIds": [
+    "fixed-overview-en-US",
+    "fixed-release-status-en-US",
+    "fixed-steam-availability-en-US",
+    "fixed-gameplay-loop-en-US",
+    "fixed-companions-heroines-en-US",
+    "fixed-achievements-en-US",
+    "fixed-wiki-hub-en-US"
+  ],
+  "schemaTypes": [
+    "WebSite",
+    "CollectionPage",
+    "FAQPage"
+  ],
+  "sourceStatus": "official",
+  "lastReviewed": "2026-09-25"
 };

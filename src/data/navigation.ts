@@ -1,15 +1,41 @@
-import { site } from "@/data/site";
+import type { SiteLocaleConfig } from "@/types/localization";
 
 export interface LocalizedNavigationItem {
   href: string;
   labels: Record<string, string>;
 }
 
+const pageLabelMap: Record<string, string> = {
+  home: "Home",
+  overview: "Overview",
+  "release-status": "Release",
+  "steam-availability": "Steam",
+  "system-requirements": "System Requirements",
+  platforms: "Platforms",
+  languages: "Languages",
+  "price-and-editions": "Price",
+  "reviews-and-reception": "Reviews",
+  demo: "Demo",
+  "gameplay-loop": "Gameplay",
+  "time-loop-mechanics": "Time Loop",
+  "alchemy-system": "Alchemy",
+  "farming-and-crops": "Farming",
+  peoplesprouts: "Peoplesprouts",
+  "companions-heroines": "Companions",
+  factions: "Factions",
+  endings: "Endings",
+  achievements: "Achievements",
+  "wiki-hub": "Wiki",
+  guides: "Guides",
+};
+
 export const primaryNavigation: LocalizedNavigationItem[] = [
+  { href: "/", labels: { "en-US": "Home" } },
   { href: "/wiki", labels: { "en-US": "Wiki" } },
-  { href: "/guides", labels: { "en-US": "Guides" } },
-  { href: "/release-date", labels: { "en-US": "Release Date" } },
-  { href: "/faq", labels: { "en-US": "FAQ" } },
+  { href: "/release", labels: { "en-US": "Release" } },
+  { href: "/gameplay", labels: { "en-US": "Gameplay" } },
+  { href: "/alchemy", labels: { "en-US": "Alchemy" } },
+  { href: "/achievements", labels: { "en-US": "Achievements" } },
 ];
 
 export const footerNavigation: LocalizedNavigationItem[] = [
@@ -25,7 +51,9 @@ export function navigationLabel(
 ): string {
   return (
     item.labels[locale] ||
-    item.labels[site.primaryLocale] ||
+    item.labels["en-US"] ||
     Object.values(item.labels)[0]
   );
 }
+
+export { pageLabelMap };

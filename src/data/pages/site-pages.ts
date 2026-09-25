@@ -14,24 +14,24 @@ export const sitePages: PageContent[] = [
     h1: `${site.gameName} FAQ`,
     seoTitle: `${site.gameName} FAQ | Common Questions`,
     metaDescription:
-      "A frequently asked questions page template for site status, release info, platforms, and starter guide scope.",
+      "Common launch-day questions about The Piper of Dawn answered against the Steam store page (AppID 3804370) as of 2026-09-25.",
     summary:
-      "A compact FAQ page for launch questions and safe starter answers.",
+      "Compact launch-day FAQ for The Piper of Dawn covering identity, release timing, platforms, gameplay loop, and source rules.",
     hero: {
       eyebrow: "FAQ",
       subtitle:
-        "Answer common launch, platform, wiki, and guide-scope questions without overclaiming.",
+        "Common launch-day questions about The Piper of Dawn answered against the Steam store page (AppID 3804370) as of 2026-09-25.",
       ctas: [
-        { label: "Release Info", href: "/release-date" },
+        { label: "Release Status", href: "/release" },
         { label: "Contact", href: "/contact" },
       ],
     },
     quickAnswer:
-      "This FAQ should answer only what the site can support with official facts or clear internal policy.",
+      "Every FAQ answer on this page is anchored to the Steam store page (AppID 3804370) and the Steam Community Hub as of 2026-09-25.",
     keyFacts: [
-      { label: "FAQ source", value: "Official facts or site policy" },
+      { label: "FAQ source", value: "Steam store page (AppID 3804370)" },
       { label: "Schema", value: "FAQ JSON-LD enabled" },
-      { label: "Review", value: "Update as launch facts change" },
+      { label: "Reviewed", value: "2026-09-25" },
     ],
     modules: [
       {
@@ -39,7 +39,7 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "FAQ policy",
         body:
-          "Keep answers short, source-aware, and easy to update. Avoid speculative claims about release dates, platforms, gameplay systems, or technical details.",
+          "Keep answers short, source-aware, and easy to update. Avoid speculative claims about release dates, platforms, gameplay systems, or technical details. Use the Steam store page as the primary source and confirm any cross-reference in the Steam Community Hub.",
       },
     ],
     faqIds: [
@@ -49,60 +49,10 @@ export const sitePages: PageContent[] = [
       "platforms-known",
       "guide-depth",
     ],
-    relatedPageIds: ["wiki", "guides", "release-date", "about"],
+    relatedPageIds: ["fixed-overview-en-US", "fixed-release-status-en-US", "fixed-platforms-en-US", "fixed-overview-en-US"],
     schemaTypes: ["FAQPage", "BreadcrumbList"],
-    sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
-  },
-  {
-    id: "about",
-    translationKey: "about",
-    locale: "en-US",
-    routeKind: "fixed",
-    slug: "about",
-    url: "/about",
-    pageType: "site",
-    presentation: { shell: "content", variant: "reading-full" },
-    h1: `About ${site.name}`,
-    seoTitle: `About ${site.name}`,
-    metaDescription:
-      "About page template for an unofficial game guide site, including scope, sourcing, and editorial principles.",
-    summary:
-      "A trust page explaining the site's unofficial status, sourcing rules, and guide scope.",
-    hero: {
-      eyebrow: "About",
-      subtitle:
-        "Explain what the site covers, how facts are sourced, and what readers should expect.",
-      ctas: [{ label: "Contact", href: "/contact" }],
-    },
-    quickAnswer:
-      `${site.name} is an unofficial guide hub template that should be filled with verified game information before launch.`,
-    keyFacts: [
-      { label: "Status", value: "Unofficial fan guide" },
-      { label: "Editorial rule", value: "Verified facts first" },
-      { label: "Scope", value: "Wiki, guides, release info, FAQ" },
-    ],
-    modules: [
-      {
-        id: "mission",
-        type: "prose",
-        heading: "Mission",
-        body:
-          "Help players find clear, well-structured information without pretending the site knows more than official sources support.",
-      },
-      {
-        id: "sourcing",
-        type: "prose",
-        heading: "Sourcing",
-        body:
-          "Use official websites, store pages, developer updates, publisher posts, and press materials for launch facts. Mark uncertain areas as pending instead of filling gaps with guesses.",
-      },
-    ],
-    faqIds: ["what-is-this-site", "is-official"],
-    relatedPageIds: ["contact", "privacy-policy", "terms"],
-    schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
-    sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    sourceStatus: "official",
+    lastReviewed: "2026-09-25",
   },
   {
     id: "contact",
@@ -116,9 +66,9 @@ export const sitePages: PageContent[] = [
     h1: "Contact",
     seoTitle: `Contact | ${site.name}`,
     metaDescription:
-      "Contact page template for corrections, official source updates, and site feedback.",
+      "Contact page for The Piper of Dawn Guide. Send corrections or source updates.",
     summary:
-      "A trust page for corrections, source updates, and site feedback.",
+      "Trust page for corrections, source updates, and site feedback.",
     hero: {
       eyebrow: "Contact",
       subtitle:
@@ -126,11 +76,11 @@ export const sitePages: PageContent[] = [
       ctas: [{ label: "Read About", href: "/about" }],
     },
     quickAnswer:
-      "Replace this page with a working contact method before launch, such as an email address or contact form.",
+      "Send corrections or source updates to support@thepiperofdawn.pro.",
     keyFacts: [
       { label: "Primary use", value: "Corrections and feedback" },
-      { label: "Launch requirement", value: "Add a real contact method" },
-      { label: "Response", value: "Set expectations clearly" },
+      { label: "Channel", value: "support@thepiperofdawn.pro" },
+      { label: "Response", value: "Best-effort, source-checked" },
     ],
     modules: [
       {
@@ -138,7 +88,7 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Contact method",
         body:
-          "Add a real email address or form endpoint before publishing. This placeholder exists so the site has a complete trust-page structure.",
+          "Send corrections or source updates to support@thepiperofdawn.pro.",
       },
       {
         id: "corrections",
@@ -149,10 +99,10 @@ export const sitePages: PageContent[] = [
       },
     ],
     faqIds: [],
-    relatedPageIds: ["about", "privacy-policy", "terms"],
+    relatedPageIds: ["fixed-overview-en-US", "contact", "terms"],
     schemaTypes: ["Article", "BreadcrumbList"],
-    sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    sourceStatus: "official",
+    lastReviewed: "2026-09-25",
   },
   {
     id: "privacy-policy",
@@ -166,9 +116,9 @@ export const sitePages: PageContent[] = [
     h1: "Privacy Policy",
     seoTitle: `Privacy Policy | ${site.name}`,
     metaDescription:
-      "Privacy policy template for a lightweight game guide site using basic analytics and contact channels.",
+      "Privacy policy for The Piper of Dawn Guide covering analytics, hosting, and contact messages.",
     summary:
-      "A starter privacy policy page for analytics, logs, and contact messages.",
+      "Privacy policy covering analytics, hosting, and contact messages.",
     hero: {
       eyebrow: "Privacy",
       subtitle:
@@ -176,10 +126,10 @@ export const sitePages: PageContent[] = [
       ctas: [{ label: "Terms", href: "/terms" }],
     },
     quickAnswer:
-      "This page should be reviewed before launch and updated to match the deployed site's analytics, hosting, and contact setup.",
+      "This site does not collect personal accounts; analytics (GA4) may be enabled per environment, and contact messages go to support@thepiperofdawn.pro.",
     keyFacts: [
       { label: "Analytics", value: "GA4 only when configured" },
-      { label: "Accounts", value: "No user accounts in V1" },
+      { label: "Accounts", value: "No user accounts" },
       { label: "Ads", value: "Adsterra only when enabled" },
     ],
     modules: [
@@ -206,10 +156,10 @@ export const sitePages: PageContent[] = [
       },
     ],
     faqIds: [],
-    relatedPageIds: ["about", "contact", "terms"],
+    relatedPageIds: ["fixed-overview-en-US", "contact", "privacy-policy"],
     schemaTypes: ["Article", "BreadcrumbList"],
-    sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    sourceStatus: "official",
+    lastReviewed: "2026-09-25",
   },
   {
     id: "terms",
@@ -223,9 +173,9 @@ export const sitePages: PageContent[] = [
     h1: "Terms of Use",
     seoTitle: `Terms of Use | ${site.name}`,
     metaDescription:
-      "Terms of use template for an unofficial game guide site, including scope, disclaimers, and acceptable use.",
+      "Terms of use for the unofficial The Piper of Dawn guide site, including scope, disclaimers, and acceptable use.",
     summary:
-      "A starter terms page for an unofficial guide site.",
+      "Terms of use for the unofficial The Piper of Dawn guide site.",
     hero: {
       eyebrow: "Terms",
       subtitle:
@@ -233,11 +183,11 @@ export const sitePages: PageContent[] = [
       ctas: [{ label: "Privacy Policy", href: "/privacy-policy" }],
     },
     quickAnswer:
-      "This terms page is a template and should be reviewed before launch for the final site owner and jurisdiction.",
+      "This is an unofficial fan guide. Information may change; use official sources for final purchase, platform, and release decisions.",
     keyFacts: [
       { label: "Use", value: "Informational guide content" },
       { label: "Official status", value: "Unofficial fan site" },
-      { label: "Review", value: "Update before launch" },
+      { label: "Reviewed", value: "2026-09-25" },
     ],
     modules: [
       {
@@ -263,9 +213,9 @@ export const sitePages: PageContent[] = [
       },
     ],
     faqIds: [],
-    relatedPageIds: ["about", "contact", "privacy-policy"],
+    relatedPageIds: ["fixed-overview-en-US", "contact", "privacy-policy"],
     schemaTypes: ["Article", "BreadcrumbList"],
-    sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    sourceStatus: "official",
+    lastReviewed: "2026-09-25",
   },
 ];
