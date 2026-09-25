@@ -1,5 +1,3 @@
-import type { SiteLocaleConfig } from "@/types/localization";
-
 export interface LocalizedNavigationItem {
   href: string;
   labels: Record<string, string>;
