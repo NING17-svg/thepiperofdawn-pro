@@ -21,6 +21,8 @@ hreflang, sitemap, and route-manifest validation.
 | `/contact` | `src/data/pages/site-pages.ts` | Utility | contact Template Game Guide | Corrections and source updates | About | Trust | Contact channel pending. |
 | `/privacy-policy` | `src/data/pages/site-pages.ts` | Legal | privacy policy | Privacy and analytics | Terms | Trust | GA4 only when configured. |
 | `/terms` | `src/data/pages/site-pages.ts` | Legal | terms of use | Site use expectations | Privacy Policy | Trust | Keep unofficial disclaimer clear. |
+| `/time-loop` | `src/data/pages/fixed-pages.ts` (`fixed-time-loop-mechanics-en-US`) | Guide | The Piper of Dawn time loop | How the Save/Load loop and Oracle stacking work | Factions / Endings | Mechanics guide | Save and Load as two favourite gods; Oracle blessings stack across loops. |
+| `/factions` | `src/data/pages/fixed-pages.ts` (`fixed-factions-en-US`) | Guide | The Piper of Dawn factions | Six-faction reputation framing | Endings / Time loop | Mechanics guide | Six rival factions confirmed; per-faction rosters and exclusivity rules are not separately published. |
 
 ## Generated Route Families
 
