@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "site_id": "thepiperofdawn-pro",
+  "worker": "dragonshelter-pro",
+  "domain": "thepiperofdawn.pro",
+  "repository": "NING17-svg/thepiperofdawn-pro",
+  "deployment_repository": "NING17-svg/game-guide-pool-07",
+  "marker_path": "/__deployment.json",
+  "pool_id": "guide-pool-07"
+}
