@@ -2,6 +2,7 @@ import { AdSlot } from "@/components/ads/AdSlot";
 import { FAQBlock } from "@/components/content/FAQBlock";
 import { ModuleRenderer } from "@/components/content/ModuleRenderer";
 import { RelatedLinks } from "@/components/content/RelatedLinks";
+import { renderInlineMarkdown } from "@/components/content/markdown";
 import { PageHero } from "@/components/pages/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { theme } from "@/data/theme";
@@ -42,7 +43,7 @@ export function WorkspacePage({
       <div className="workspace-region" data-variant={variant}>
         {workspace ?? (
           <section className="workspace-fallback" aria-label="Tool workspace">
-            <p>{page.quickAnswer}</p>
+            <p>{renderInlineMarkdown(page.quickAnswer)}</p>
           </section>
         )}
       </div>

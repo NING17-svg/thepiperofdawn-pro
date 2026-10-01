@@ -6,6 +6,17 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-10-01 - Homepage and inner pages restructured for reading
+
+- Task: Fix three rendering defects that affected every page on the site. The fold carried the whole article twice (`hero.subtitle` and `quickAnswer` held the same 50-4800 character text) and a third time in a `quick-answer` callout module; prose bodies were rendered into a single `<p>`, so `##` headings, `-` lists and `[label](href)` links appeared literally; and eight guide pages (`/gameplay`, `/alchemy`, `/farming`, `/peoplesprouts`, `/companions`, `/factions`, `/endings`, `/achievements`) shipped with an empty callout and no body at all.
+- Files changed: `src/components/content/markdown.tsx` (new), `src/components/content/ModuleRenderer.tsx`, `src/components/content/StatusCallout.tsx`, `src/components/pages/{PageHero,ContentPage,HomePage,HubPage,WorkspacePage}.tsx`, `src/styles/modules.css`, `src/data/pages/fixed-pages.ts`, `src/data/pages/home.ts`, `CONTENT_INDEX.md`.
+- Rendering: added the shared Markdown renderer so a prose body becomes headings, paragraphs, lists, tables and real links instead of one flat paragraph. The fold fields use the inline variant so a link in a subtitle or Quick Answer renders as an anchor rather than as text.
+- Content: each `##` section of an existing article became its own prose module, the leading lede became the Quick Answer the shell already prints, and the duplicate `quick-answer` callout and the authoring-only "Internal link requirements" module were removed from all 20 pages. Article text was moved, not retyped, so no sourced fact, URL or link changed.
+- New pages: the eight empty guide pages were written from facts the site already states elsewhere (the systems named on the homepage and in the /wiki descriptions, the factions and heroines the hub names, the Steam tag confirmations, and the existing 2026-09-25 "not announced" boundaries). No recipe, stat, quest, achievement name or ending was invented; each page states what the developer has not published.
+- Internal links: `relatedPageIds` filled on `/platforms`, `/languages`, `/price`, `/reviews`, `/demo` (previously empty, so RelatedLinks rendered nothing) and on the eight new pages.
+- URLs affected: none. No route, slug, canonical, keyword, CTA or page type changed.
+- Verification: `npm run verify` passed (typecheck, lint, template, content, indexnow, static export, rendered SEO — 24 pages). A sweep of the 26 built HTML files found no literal `##`, no unrendered `- ` list line, no unrendered `[label](/href)`, no Quick Answer rendered twice, no internal-link requirements text, and no fold field over 400 characters.
+
 ### 2026-09-26 - Time loop mechanics page populated
 
 - Task: Populate `/time-loop` with a complete mechanics page covering the day-reset loop, what persists across loops, the Save and Load gods as a named pair, the Oracle Summons stacking mechanic, and the loop's interaction with faction reputation and endings.

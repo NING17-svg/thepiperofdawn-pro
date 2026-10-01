@@ -3,6 +3,7 @@ import { AdSlot } from "@/components/ads/AdSlot";
 import { FAQBlock } from "@/components/content/FAQBlock";
 import { KeyFacts } from "@/components/content/KeyFacts";
 import { ModuleRenderer } from "@/components/content/ModuleRenderer";
+import { renderInlineMarkdown } from "@/components/content/markdown";
 import { RelatedLinks } from "@/components/content/RelatedLinks";
 import { PageHero } from "@/components/pages/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -29,7 +30,7 @@ export function HomePage({ page }: { page: PageContent }) {
       <JsonLd data={faqSchema(faqs)} />
       <PageHero page={page} priority />
       <section className="home-summary">
-        <p className="quick-answer">{page.quickAnswer}</p>
+        <p className="quick-answer">{renderInlineMarkdown(page.quickAnswer)}</p>
         <KeyFacts facts={page.keyFacts} />
       </section>
       <AdSlot placement="responsive-banner" />
